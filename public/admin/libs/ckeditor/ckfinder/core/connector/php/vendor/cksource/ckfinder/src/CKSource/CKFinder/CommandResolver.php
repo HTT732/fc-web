@@ -187,7 +187,7 @@ class CommandResolver implements ControllerResolverInterface
 
         foreach ($parameters as $param) {
             /* @var $param \ReflectionParameter */
-            if ($reflectionClass = $param->getClass()) {
+            if ($reflectionClass = new \ReflectionClass($param->getType()->getName())) {
                 if ($reflectionClass->isInstance($this->app)) {
                     $arguments[] = $this->app;
                 } elseif ($reflectionClass->isInstance($request)) {

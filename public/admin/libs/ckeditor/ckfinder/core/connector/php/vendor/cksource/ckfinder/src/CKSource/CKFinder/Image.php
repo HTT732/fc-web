@@ -206,10 +206,11 @@ class Image
         } else {
             $this->gdImage = imagecreatefromstring($imageData);
         }
-
-        if (!is_resource($this->gdImage)) {
-            throw new CKFinderException('Unsupported image type (not resource): ' . $this->mime);
-        }
+	
+		// HTT fix
+        //if (!is_resource($this->gdImage)) {
+        //    throw new CKFinderException('Unsupported image type (not resource): ' . $this->mime);
+        //}
 
         unset($imageData);
     }
