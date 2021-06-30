@@ -55,6 +55,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Request $request)
     {
+        if (config('app.app_env') == 'production') {
+            URL::forceScheme('https');
+            $this->app['request']->server->set('HTTPS','on');
+        }
         // set cookie 
         makeCookie('order_token','', request()->gethost());
     }
