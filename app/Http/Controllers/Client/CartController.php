@@ -35,7 +35,9 @@ class CartController extends Controller
             return back()->withInput()
                         ->with('error_checkout', __('messages.error_checkout'));
         }
-        setcookie('order_token', '', time()-3600, '/', 'web-fc.herokuapp.com');
+        
+        $host = request()->gethost();
+        setcookie('order_token', '', time()-3600, '/', $host);
         return redirect()->route('order-complete');
         //->withCookie(cookie('order_token',null,0))
     }
