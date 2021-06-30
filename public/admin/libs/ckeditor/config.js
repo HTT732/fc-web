@@ -4,6 +4,7 @@
  * Tích hợp và hướng dẫn bởi https://trungtrinh.com - Website chia sẻ bách khoa toàn thư */
  var base_url = window.location.origin;
 
+
 CKEDITOR.editorConfig = function( config ) {
     config.filebrowserBrowseUrl = base_url + '/admin/libs/ckeditor/ckfinder/ckfinder.html';
     config.filebrowserImageBrowseUrl = base_url + '/admin/libs/ckeditor/ckfinder/ckfinder.html?type=Images';

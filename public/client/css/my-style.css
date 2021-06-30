@@ -1216,3 +1216,7 @@ main {
     white-space: pre-line;
     overflow-wrap: break-word;
 }
+
+.page-wrapper {
+    min-height: calc(100vh - 250px);
+}
