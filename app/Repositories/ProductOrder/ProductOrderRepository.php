@@ -85,7 +85,7 @@ Class ProductOrderRepository extends RepositoryAbstract implements ProductOrderR
     {
         return $this->model->join('products','product_orders.product_id','=','products.id')
                             ->join('orders','product_orders.order_id','=','orders.id')
-                            ->groupBy('product_orders.order_token')
+                            ->groupBy('product_orders.order_token', 'product_orders.order_number')
                             ->orderBy('product_orders.order_number','DESC')
                             ->where('product_orders.active', '>', 0)
                             ->select(
