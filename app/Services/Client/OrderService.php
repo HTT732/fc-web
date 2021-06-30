@@ -26,7 +26,7 @@ Class OrderService
 
     public function order($id, $quanlity)
     {
-        dd(request()->gethost());
+        dd(request()->gethost() == 'web-fc.herokuapp.com');
         $token = Cookie::get('order_token');
         if (!$token) {
             $token = Str::random(64);
