@@ -61,7 +61,6 @@ class AppServiceProvider extends ServiceProvider
             $this->app['request']->server->set('HTTPS','on');
         }
         
-        dd(request()->gethost());
         // set cookie 
         makeCookie('order_token','', request()->gethost());
     }
