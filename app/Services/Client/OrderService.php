@@ -26,12 +26,10 @@ Class OrderService
 
     public function order($id, $quanlity)
     {
-        
         $token = Cookie::get('order_token');
         if (!$token) {
             $token = Str::random(64);
-            setCookie('order_token', $token, time()+3600*24*30, '/', '_web-fc.herokuapp.com');
-           // makeCookie('order_token', $token, request()->gethost());
+            makeCookie('order_token', $token, request()->gethost());
         }
 
         $order = [
