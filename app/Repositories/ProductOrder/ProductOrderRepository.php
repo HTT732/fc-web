@@ -83,7 +83,6 @@ Class ProductOrderRepository extends RepositoryAbstract implements ProductOrderR
 
     public function getAllOrder()
     {
-        dd($this->model->get()->toArray());
         return $this->model->join('products','product_orders.product_id','=','products.id')
                             ->join('orders','product_orders.order_id','=','orders.id')
                             ->groupBy('product_orders.order_token', 'product_orders.order_number')
