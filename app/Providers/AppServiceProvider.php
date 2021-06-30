@@ -60,6 +60,8 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
             $this->app['request']->server->set('HTTPS','on');
         }
+        
+        dd(request()->gethost());
         // set cookie 
         makeCookie('order_token','', request()->gethost());
     }
