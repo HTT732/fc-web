@@ -110,5 +110,4 @@
     <script src="{{asset('admin/libs/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
     <script src="{{asset('admin/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')}}"></script>
     <script src="{{asset('admin/js/pages/ecommerce-datatables.init.js')}}"></script>
-    <script src="{{asset('admin/js/my-script.js')}}"></script>
 @endpush
