@@ -15,14 +15,14 @@ $(function () {
         }
     });
 
-    // Delete product , category
-    $('#dataTable').on('click', '.delete-btn', function(e) {
+    // Delete product , category, order
+    $(document).on('click', '#dataTable .delete-btn', function(e) {
         e.preventDefault();
         $this = $(this)
         id = $this.attr('data-id');
         url = $this.attr('href');
         token = $('#dataTable input[name="_token"]').val();
-        row = $('#dataTable').DataTable().row($this.closest('tr'));
+        row = $('#dataTable').DataTable().row($this.closest('tr').prev());
 
         var data = {
             id: id,
@@ -80,7 +80,7 @@ $(function () {
     });
 
     // don't multiple click
-    $('.btn-update').click(function () {
+    $('.btn-update').on('click',function () {
         $('.loading').removeClass('hide');
         $(this).addClass('disabled', 'disabled');
     })
@@ -101,7 +101,7 @@ $(function () {
     });
 
     // Updata process order 
-	$('.process-order').on('click', function () {
+	$(document).on('click', '.process-order', function () {
         var $td = $(this).closest('td');
 		var token = $('input[name="_token"]').val();
 		var url = $(this).attr('data-url');
