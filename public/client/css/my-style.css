@@ -1233,7 +1233,10 @@ main {
     .header-search.hs-toggle .input-wrapper {
         right: -6.5rem!important;
     }
-}
+    
+    toolbox-right {
+        margin-top: 20px!important;
+    }
 
 @media (min-width: 450px) {
     .toolbox-left .header-search.hs-toggle:hover .input-wrapper {
