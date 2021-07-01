@@ -1220,3 +1220,23 @@ main {
 .page-wrapper {
     min-height: calc(100vh - 225px);
 }
+
+/* show search  */
+@media (max-width: 991px) {
+    .toolbox .divider, 
+    .toolbox .header-search {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-search.hs-toggle .input-wrapper {
+        right: -6.5rem!important;
+    }
+}
+
+@media (min-width: 450px) {
+    .toolbox-left .header-search.hs-toggle:hover .input-wrapper {
+        right: -19.5rem!important;
+    }
+}
