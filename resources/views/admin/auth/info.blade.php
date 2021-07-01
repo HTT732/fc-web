@@ -56,26 +56,26 @@
                                     </div>
                                 </div>
                                 <div class="row mb-2">
-                                    <label for="example-search-input" class="col-6 fw-bold col-sm-4 col-form-label col-lg-3 text-truncate">Quản trị viên</label>
-                                    <div class="col-6 col-sm-5 col-md-4">
+                                    <label for="example-search-input" class="col-5 fw-bold col-sm-4 col-form-label col-lg-3 text-truncate">Quản trị viên</label>
+                                    <div class="col-7 col-sm-5 col-md-4">
                                         <input type="text" name="name" class="form-control" value="{{$admin->name}}">
                                     </div>
                                 </div>
                                 <div class="row mb-2">
-                                    <label for="example-email-input" class="col-6 fw-bold col-sm-4 col-lg-3 col-form-label">Email</label>
-                                    <div class="col-6 col-sm-5 col-md-4">
+                                    <label for="example-email-input" class="col-5 fw-bold col-sm-4 col-lg-3 col-form-label">Email</label>
+                                    <div class="col-7 col-sm-5 col-md-4">
                                         <input type="text" name="email" class="form-control" value="{{$admin->email}}">
                                     </div>
                                 </div>
                                 <div class="row mb-2">
-                                    <label for="example-email-input" class="col-6 fw-bold col-sm-4 col-lg-3 col-form-label">Tài khoản</label>
-                                    <div class="col-6 col-sm-5 col-md-4">
+                                    <label for="example-email-input" class="col-5 fw-bold col-sm-4 col-lg-3 col-form-label">Tài khoản</label>
+                                    <div class="col-7 col-sm-5 col-md-4">
                                         <input type="text" name="username" class="form-control" value="{{$admin->username}}">
                                     </div>
                                 </div>
                                 <div class="row mb-2">
-                                    <label for="example-email-input" class="fw-bold col-6 col-sm-4 col-lg-3 col-form-label">Mật khẩu</label>
-                                    <div class="col-6 col-sm-5 col-md-4">
+                                    <label for="example-email-input" class="fw-bold col-5 col-sm-4 col-lg-3 col-form-label">Mật khẩu</label>
+                                    <div class="col-7 col-sm-5 col-md-4">
                                         <label class="col-form-label">
                                             <a href="{{route('change-password')}}" class="col-form-label">Đổi mật khẩu</a>
                                         </label>
