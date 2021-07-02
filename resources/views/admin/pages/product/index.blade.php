@@ -17,14 +17,6 @@
                  <h4>Quản lý sản phẩm</h4>
              </div>
          </div>
-         <div class="col-6">
-            <div class="float-end">
-                <a href="{{route('admin.product.create')}}" class="btn btn-success">
-                 <i class="mdi mdi-plus"></i>
-                 Thêm sản phẩm
-                 </a>
-            </div>
-         </div>
      </div>
     </div>
  </div>
@@ -39,9 +31,14 @@
                 <div class="card">
                     <div class="card-body  pt-0">
                         <ul class="nav nav-tabs nav-tabs-custom mb-4">
-                            <li class="nav-item">
+                            <li class="nav-item col-5 col-sm-3 col-md-4">
                                 <a class="nav-link fw-bold p-3 active" href="#">Tất cả sản phẩm</a>
                             </li>
+                            <div class="col-7 col-sm-9 col-md-8 float-end align-self-center">
+                                <div class="float-end">
+                                    <a href="{{route('admin.product.create')}}" class="btn btn-success"><i class="mdi mdi-plus me-2"></i> Thêm sản phẩm</a>
+                                </div>
+                             </div>
                         </ul>
                         <div class="table-responsive">
                         @if(count($products) > 0)
