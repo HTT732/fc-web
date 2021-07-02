@@ -12,13 +12,13 @@
 <div class="page-title-box" style="padding:32px 24px 113px 24px">
     <div class="container-fluid">
      <div class="row align-items-center">
-         <div class="col-sm-6">
+         <div class="col-6">
              <div class="page-title">
                  <h4>Quản lý sản phẩm</h4>
              </div>
          </div>
-         <div class="col-sm-6">
-            <div class="float-end d-none d-sm-block">
+         <div class="col-6">
+            <div class="float-end">
                 <a href="{{route('admin.product.create')}}" class="btn btn-success">
                  <i class="mdi mdi-plus"></i>
                  Thêm sản phẩm
