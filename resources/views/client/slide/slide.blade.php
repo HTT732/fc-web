@@ -10,8 +10,14 @@
     'responsive': {
         '1360': {
             'nav': true
-	        }
+	    },
+        '0': {
+            'dots': false
+	    },
+        '768': {
+            'dots': true
 	    }
+    }
 	}">
     
     @if(isset($data) && count($data['sliders']) > 0)
