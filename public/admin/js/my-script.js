@@ -22,7 +22,14 @@ $(function () {
         id = $this.attr('data-id');
         url = $this.attr('href');
         token = $('#dataTable input[name="_token"]').val();
-        row = $('#dataTable').DataTable().row($this.closest('tr').prev());
+        tr = $this.closest('tr');
+        row = '';
+
+        if (tr.hasClass('child')) {
+            row = $('#dataTable').DataTable().row(tr.prev());
+        } else {
+            row = $('#dataTable').DataTable().row(tr);
+        }
 
         var data = {
             id: id,
